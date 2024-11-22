@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: scroll url("../imagens/bg-4.jpg")  no-repeat;
+    background-size: 100%;
+    height: 450px;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    margin-right: 10px;
+}
+.title-header{
+    margin: 0;
+}
+
+header h1{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 10px black;
+}
+
+header h2{
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 1em;
+    background-color: rgba(22, 22, 22, 0.74);
+}
+
+
+.buttom-header{
+    border: 2px solid white;
+    float: right;
+    font-weight: bold;
+    background-color: rgba(22, 22, 22, 0.74);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 5px 0px 0px;
+}
+
+section{
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+article{
+    margin: 0px 60px;
+    background-color: rgba(127, 255, 212, 0.363);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+article h1{
+    margin-top: 0;
+    padding: 10px;
+    background-color: cadetblue;
+    border-bottom: 1px solid red;
+}
+article a{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    color: red;
+    background-color: chartreuse;
+    padding: 30px;
+    text-shadow: 1px 1px 10px black;
+}
+

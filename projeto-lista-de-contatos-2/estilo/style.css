@@ -1,0 +1,106 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(125, 174, 190);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+    flex-wrap: wrap;
+    width: 60%;
+    list-style-type: none;
+}
+.list-item{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 3px 1px #00000054;
+}
+
+.list-item.image1{
+    background:url("../Background_Pictures/1.jpg") no-repeat white;
+    background-position: top;
+    background-size: 100% 40%;
+}
+.list-item.image2{
+    background:url("../Background_Pictures/1.jpg") no-repeat white;
+    background-position: top;
+    background-size: 100% 40%;
+}
+.list-item.image3{
+    background:url("../Background_Pictures/1.jpg") no-repeat white;
+    background-position: top;
+    background-size: 100% 40%;
+}
+.list-item.image4{
+    background:url("../Background_Pictures/1.jpg") no-repeat white;
+    background-position: top;
+    background-size: 100% 40%;
+}
+.list-item.image5{
+    background:url("../Background_Pictures/1.jpg") no-repeat white;
+    background-position: top;
+    background-size: 100% 40%;
+}
+.list-item.image6{
+    background:url("../Background_Pictures/1.jpg") no-repeat white;
+    background-position: top;
+    background-size: 100% 40%;
+}
+
+
+.list-item__pfp img{
+    width: 90px;
+    border-radius: 50%;
+}
+
+.list-item__info h2, p{
+    margin: 5px 0;
+    text-align: center;
+}
+
+.list-item__info h2{
+    color: rgb(0, 75, 0);
+}
+
+.list-item__info p{
+    color: grey;
+}
+
+.list-item__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+    height: 15%;
+    width: 100%;
+    border-radius: 00px 0px 5px 5px;
+}
+
+.list-item__icon a{
+    text-align: center;
+    flex-grow: 1;
+    color: rgb(65, 54, 54);
+}

@@ -1,0 +1,38 @@
+article{
+    border: 1px solid black;
+    height: 150px;
+    width: 400px;
+    display: flex;
+}
+
+div{
+    border: 1px solid red;
+    width: 50px;
+}
+
+.container-1{
+    justify-content: space-evenly;
+}
+
+.item-container-1{
+    width: 50px;
+    height: 60px;
+}
+.container-2{
+    align-items: center;
+}
+.item-container-2{
+    height: 30px;
+}
+
+.container-3{
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+
+}
+
+.item-container-3{
+    width: 150px;
+    height: 60px;
+}
