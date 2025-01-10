@@ -1,0 +1,74 @@
+:root{
+    --nav-color:#31333b86;
+    --main-section-color:#45485679;
+    --h1-color: #a2a5af;
+    --h2-color: #f77b3d;
+}
+
+.main-section_title{
+    border-left: 1px solid var(--h2-color);
+    height: fit-content;
+    padding-left: 2rem;
+    margin-bottom: 1.3rem;
+}
+.main-section_title_h2{
+    color: var(--h2-color);
+    padding-bottom: 1rem;
+    font-size: 1.35rem;
+    margin: .7rem 0;
+}
+
+.main-section_title_h3{
+    color: var(--h2-color);
+    font-size: .9rem;
+    margin: .7rem 0;
+}
+
+.main-section_title_p{
+    color: whitesmoke;
+    font-size: 1rem;
+    margin: .5rem 0;
+}
+
+.row{
+    display: flex;
+    gap: 1rem;
+}
+
+.row>*{
+    flex: 1 0 0%;
+}
+
+.botao-normal, .botao-outline{
+    padding: .5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.small{
+    font-size: .65rem;
+}
+
+.botao-normal{
+    background-color: #00000080;
+    border: 2px solid black;
+}
+
+.botao-full{
+    background-color: #00000080;
+    display: block;
+    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+
+.botao-outline{
+    background-color: transparent;
+    border: 2px solid black;
+}

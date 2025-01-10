@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b68b2;
+    font-size: 1.2rem;
+}
+form{
+    width: 50%;
+    padding: 25px;
+    background-color: white;
+    box-shadow:-5px 0px rgba(0, 0, 0, 0.473);
+}
+
+fieldset{
+    border: 0;
+    position: relative;
+}
+legend{
+    font-weight: lighter;
+    font-size: 1.75rem;
+    color: #3b68b2;
+    padding: 10px 0px;
+}
+
+label{
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+input{
+    margin: 8px 0px;
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #00000081;
+}
+input[type=submit]{
+    color: white;
+    width: fit-content;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    height: 2.5rem;
+    text-transform: uppercase;
+    background-color: #3b68b2;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+    padding: 0px 10px;
+    border-bottom: 1px solid black;
+    transition: padding 1s, border 1s;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.question{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    transform: translateY(70%);
+}
+a, p{
+    font-size: .8rem;
+    display: inline-block;
+}
+
+.cadastro{
+    font-size: 1rem;
+    color: #3b68b2;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.fpass{
+    position: absolute;
+    right: 0;
+    transform: translateY(150%);
+}

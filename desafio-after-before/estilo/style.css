@@ -1,0 +1,23 @@
+a[href$=".com"]::after{
+    content: url(../imagens/newWindow-icon.png);
+}
+a[href$=".pdf"]::before{
+    content: url(../imagens/pdf-icon.gif);
+}
+input:checked+label{
+    background-color: green;
+}
+input+label{
+    background-color: red;
+}
+
+input:disabled+label{
+    background-color: blue;
+}
+
+ul li:nth-child(3){
+    background-color: red;
+}
+ol li:nth-child(3){
+    background-color: rgba(255, 0, 0, 0.089);
+}

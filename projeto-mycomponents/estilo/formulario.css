@@ -1,0 +1,51 @@
+.main-div form{
+    flex-grow: 2;
+}
+.main-div .second-half{
+    flex-grow: 1;
+    padding-left: 2rem;
+    color: white;
+}
+.main-section_h1{
+    padding-bottom:1rem;
+}
+
+.main-section_h2{
+    font-size: 1.2rem;
+}
+
+input, textarea{
+    padding: .3rem 0;
+}
+
+.input-container{
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.input-radio, .input-checkbox{
+    padding: .35rem 0em 0em;
+    font-size: .925rem;
+}
+
+.main-div{
+    display: flex;
+}
+
+.interaction-container{
+    display: flex;
+    gap: 1rem;
+}
+.interaction-container input{
+    flex-grow: 1;
+    border-radius: .1rem;
+    border: none;
+}
+
+.interaction-container input:nth-last-child(1){
+    background-color: transparent;
+    color: white;
+    outline: 1px solid;
+}
+

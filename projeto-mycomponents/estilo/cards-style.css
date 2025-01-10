@@ -1,0 +1,94 @@
+:root{
+    --nav-color:#31333b86;
+    --main-section-color:#45485679;
+    --h1-color: #a2a5af;
+    --h2-color: #f77b3d;
+}
+
+.card{
+    max-width: min-content;
+    min-width: 40vw;
+    background-color: #33323b;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-1_image{
+    max-width: fit-content;
+}
+
+.card-1_h2{
+    font-size: 1.75rem;
+    padding: 10px;
+}
+
+.card-1_p{
+    width: 100%;
+    color: white;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    padding: 0px 10px 15px 10px;
+    width: fit-content;
+}
+
+.main-section_title_h1{
+    color: var(--h2-color);
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.two-cards{
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+.card-2{
+    width: 50%;
+    background-color: #33323b;
+    margin-bottom: 2rem;
+}
+
+.card-2_image{
+    max-width: 100%;
+}
+
+.three-cards{
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.card-3{
+    width: 33%;
+    background-color: #33323b;
+    margin-bottom: 2rem;
+}
+.card-3_image{
+    max-width: 100%;
+}
+.card-3-p{
+    font-size: .6rem;
+}
+.four-cards{
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+.card-4{
+    width: 20%;
+    background-color: #33323b;
+    margin-bottom: 2rem;
+}
+.card-4_image{
+    max-width: 100%;
+}
+
+.card-4-p{
+    font-size: .6rem;
+}

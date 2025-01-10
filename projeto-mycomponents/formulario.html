@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="imagens/serliv.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/formulario.css">
+
+</head>
+<body>
+    <nav class="navigation">
+        <img src="imagens/perfil.png" alt="Imagem de perfil" class="nav_image">
+        <ul>
+            <li class="nav_li"><a href="index.html" class="nav_li_link">Home</a></li>
+            <li class="nav_li"><a href="tipografia.html" class="nav_li_link">Tipografia</a></li>
+            <li class="nav_li"><a href="cards.html" class="nav_li_link">Cards</a></li>
+            <li class="nav_li"><a href="#" class="nav_li_link">Listas</a></li>
+            <li class="nav_li"><a href="formulario.html" class="nav_li_link">Formulário</a></li>
+            <li class="nav_li"><a href="#" class="nav_li_link">Botões</a></li>
+            <li class="nav_li"><a href="#" class="nav_li_link">Tabelas</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <h1 class="main-section_h1">My component</h1>
+        
+        <h2 class="main-section_h2">Entre em contato</h2>
+        
+        <div class="main-div">
+            <form action="">
+                <div class="input-container">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="i-nome">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="i-email">
+                </div>
+                <div class="input-container">
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="i-mensagem" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+                <h2 class="main-section_h2">Quiz</h2>
+
+                <label for="i-selecionar">Qual é a sua linguagem preferida?</label>
+                <select name="selecionar" id="i-selecionar">
+                    <option value="java">Java</option>
+                    <option value="js">JavaScript</option>
+                </select>
+                <div class="input-container">
+                    <label for="quiz">Qual é a sua linguagem preferida?</label>
+                    <input type="search" name="quiz" id="i-quiz">
+                    <datalist id="quiz">
+                        <option value="Java">Java</option>
+                    </datalist>
+                    <div class="input-radio">
+                        <label for="i-b-prio">Baixa prioridade</label>
+                        <input type="radio" name="b-prio" id="i-b-prio">
+                    </div>
+                    <div class="input-radio">
+                        <label for="i-m-prio">Média prioridade</label>
+                        <input type="radio" name="m-prio" id="i-m-prio">
+                    </div>
+                    <div class="input-radio">
+                        <label for="i-a-prio">Alta prioridade</label>
+                        <input type="radio" name="a-prio" id="i-a-prio">
+                    </div>
+                    <div class="input-checkbox">
+                        <input type="checkbox" name="copia" id="i-copia">
+                        <label for="i-copia">Envie-me uma cópia</label>
+                    </div>
+                    <div class="input-checkbox">
+                        <input type="checkbox" name="copia" id="i-copia">
+                        <label for="i-copia">Sou um humano</label>
+                    </div>
+                </div>
+                <div class="interaction-container">
+                    <input type="submit" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            <div class="second-half">
+                <p>Endereço 1234 Somewhere Rd. Nashville, TN 000000 United States</p>
+                <p>Telefone 000-000-000</p>
+                <p>Email email@server.com</p>
+            </div>
+        </div>
+
+
+   
+    </section>
+    
+  
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            background-color: grey;
+        }
+        main{
+            border: 1px solid black;
+            margin: auto;
+            width: 500px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        main div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        main div button{
+            padding: 5px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        :popover-open{
+            inset: unset;
+            position: relative;
+            top: 10%;
+            right: 36%;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+        }
+
+        ::backdrop{
+            background-color: rgb(0, 0, 0, 0.32);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Perfil de Cauã Victor</h1>
+            <button popovertarget="pover">Ajuda</button>
+            <p id="pover" popover>O nome completo do usuário. Ele pode ser alterado nas configurações de perfil.</p>
+
+        </div>
+        <p><b>Nome:</b> Cauã Victor</p>
+        <hr>
+        <h1>
+            Informações de Contato
+        </h1>
+        <p><b>Email: </b> cauavictor@example.com</p>
+    </main>
+    
+</body>
+</html>
