@@ -31,32 +31,32 @@
         
         <div class="main-div">
             <form action="">
-                <div class="input-container">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="i-nome">
-                </div>
-                <div class="input-container">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="i-email">
+                <div class="row">
+                    <div class="input-container">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="i-nome">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="i-email">
+                    </div>
                 </div>
                 <div class="input-container">
                     <label for="mensagem">Digite sua mensagem</label>
                     <textarea name="mensagem" id="i-mensagem" cols="30" rows="10"></textarea>
                 </div>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="input-submit">
                 <h2 class="main-section_h2">Quiz</h2>
 
-                <label for="i-selecionar">Qual é a sua linguagem preferida?</label>
-                <select name="selecionar" id="i-selecionar">
+                <label for="i-selecionar" class="select-label">Qual é a sua linguagem preferida?</label>
+                <select name="selecionar" id="i-selecionar" class="select">
+                    <option value="">Selecionar</option>
                     <option value="java">Java</option>
                     <option value="js">JavaScript</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
                 </select>
                 <div class="input-container">
-                    <label for="quiz">Qual é a sua linguagem preferida?</label>
-                    <input type="search" name="quiz" id="i-quiz">
-                    <datalist id="quiz">
-                        <option value="Java">Java</option>
-                    </datalist>
                     <div class="input-radio">
                         <label for="i-b-prio">Baixa prioridade</label>
                         <input type="radio" name="b-prio" id="i-b-prio">
@@ -74,8 +74,8 @@
                         <label for="i-copia">Envie-me uma cópia</label>
                     </div>
                     <div class="input-checkbox">
-                        <input type="checkbox" name="copia" id="i-copia">
-                        <label for="i-copia">Sou um humano</label>
+                        <input type="checkbox" name="humano" id="i-humano">
+                        <label for="i-humano">Sou um humano</label>
                     </div>
                 </div>
                 <div class="interaction-container">

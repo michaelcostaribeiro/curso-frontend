@@ -1,0 +1,40 @@
+:root{
+    --primary-color: #612975;
+    --secondary-color: #511a63;
+}
+
+.header{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header img{
+    margin: .5em 1em;
+}
+.header ul{
+    display: flex;
+    margin: .5em;
+}
+
+.header__nav ul li{
+    background-color: transparent;
+}
+
+.header__nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: var(--primary-color);
+}
+.header__nav ul li a:hover{
+    background-color: color-mix(in srgb, var(--primary-color), white 85%);
+
+}
+.hero-banner{
+    background-color: var(--secondary-color);
+}
+.hero-banner h2, .hero-banner p{
+    color: white;
+}
+.hero-banner img{
+    display: block;
+    height: 5rem;
+}

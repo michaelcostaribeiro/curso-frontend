@@ -1,0 +1,13 @@
+.hero-banner{
+    background-image: url(../images/bg_topo_1198x670.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 45rem;
+}
+.hero-banner{
+    justify-content: end;
+}
+.btn{
+    margin: 1em auto 2.5em;
+}
