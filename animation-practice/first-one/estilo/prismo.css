@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --prismo-eyes:#6fcefb;
+    --background:#f6f000;
+    --background-line:#f4ed00;
+}
+
+body{
+    background-image: linear-gradient(170deg, var(--background) 79.2%, var(--background-line) 79.3% , var(--background) 79.4%);
+    /* height: 100vh; */
+}
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+.eye{
+    background-color: var(--prismo-eyes);
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    transform: translateY(-310px);
+    border-radius: 50%;
+    animation: eyes-moving 5s ease-in-out infinite alternate;
+}
+
+@keyframes eyes-moving {
+    0%, 20%{
+        transform: translate(0%, -310px);
+        
+    }
+    40%, 60%{
+        transform: translate(70%, -310px);
+    }
+    80%, 100%{
+        transform: translate(130%, -310px);
+    }
+}

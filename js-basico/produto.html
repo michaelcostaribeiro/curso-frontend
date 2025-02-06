@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produto</title>
+</head>
+<body>
+    <script>
+        let produto = {
+            nome: 'pen',
+            preco: .2,
+            quantidade: 10,
+        }
+        document.write(`${produto.nome} custa R$${produto.preco} e temos ${produto.quantidade} no nosso estoque.`)
+
+        const carro = {
+            modelo: "Uno",
+            ano: 2023,
+            km: 10_000,
+            combustivel:"gasolina",
+            litrosConsumidos: 625
+        }
+        
+        let kmL = carro.km/carro.litrosConsumidos
+
+        document.write(`<br>${kmL}Km/L`)
+    </script>
+</body>
+</html>

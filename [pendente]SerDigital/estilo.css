@@ -1,0 +1,144 @@
+:root {
+    --dark: #272D38;
+    --light: #FFF;
+    --primary-color: #8EADD5;
+    --primary-color-dark: #3f3f3f;
+    --gray: #F6F6F6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+    text-align: center;
+    margin: 0;
+}
+
+.content-wrapper-center {
+    padding: 1rem;
+}
+
+.header-menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+.header-menu a {
+    display: block;
+    padding: 2em 0;
+
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.header {
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--primary-color-dark);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.brands h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #667085;
+}
+
+.brands ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.hide {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.testemunho {
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.contato {
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.contato_image {
+    display: none;
+}
+
+.footer {
+    background-color: var(--gray);
+    padding: 3rem 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.copyright {
+    white-space: nowrap;
+}
+
+.hero,
+.brands,
+.branding,
+.testemunhos,
+.contato {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}

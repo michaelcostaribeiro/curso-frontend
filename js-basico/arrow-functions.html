@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <script>
+        //funções normais
+        function ola1(nome){
+            console.log("ola de function declaration, " + nome)
+        }
+        ola1("daniel")
+
+        //functions expressions
+        const ola2 = function (nome) {
+            console.log("ola de function expression, " + nome)
+        }
+        ola2("maria")
+
+        const arr = [ola1, ola2, function() { console.log("função anônima dentro de array executada")}]
+        
+        arr[2]()
+
+        //arrow function
+        const ola3 = (nome) => {
+            console.log("ola de arrow function, " + nome)
+        }
+        ola3("eu sou uma arrow function")
+
+        const soma = (n1, n2) => n1 + n2
+        
+        console.log(soma(7,3))
+
+        const multiplicaPorDois = n => n * 2
+
+        console.log(multiplicaPorDois(multiplicaPorDois(8)))
+    </script>
+</body>
+</html>

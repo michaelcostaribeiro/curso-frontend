@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dados</title>
+</head>
+<body>
+    <script>
+        let dado = [1,2,3,4,5,6]
+        let jogada1 = 0
+        let jogada2 = 0
+        let contador = 0
+        
+        jogada1 = Math.floor(Math.random()*5)
+        console.log(jogada1)
+
+
+        while(jogada1!= jogada2){
+            jogada2 = Math.floor(Math.random()*5)
+            console.log(jogada2)
+            
+            contador++
+        }
+        console.log("A quantidade de tentativas foi: "+ contador)
+        
+
+    </script>
+</body>
+</html>

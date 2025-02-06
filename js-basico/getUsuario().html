@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getUsuario</title>
+</head>
+<body>
+    <button onclick="getUsuario()">Ver usuarios</button>
+    <output id="_output"><br></output>
+
+    <script>
+
+        const listaDeUsuarios= [{nome:"aaaa",email:"aaaa@gmail.com",},
+        {nome:"bbbbbb", email:"bbbbb@gmail.com"}]
+        let out = document.getElementById("_output")
+
+        function addUsuario(){
+            let nome = prompt("Digite um nome: ")
+            let email = prompt("Digite um email: ")
+            listaDeUsuarios.push({nome,email})
+        }
+        function getUsuario(){
+            for(let i = 0;i<listaDeUsuarios.length;i++){
+                out.innerHTML += listaDeUsuarios[i].nome +" "+ listaDeUsuarios[i].email +"<br>"
+            }
+        }
+
+        addUsuario()
+    </script>
+</body>
+</html>

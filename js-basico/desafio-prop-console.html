@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <!-- Pergunte em um prompt o nome e o email do usuário. Depois armazene esses valores num objeto e mostre esse objeto no console. -->
+
+
+    <script>
+        let nome = prompt("Digite o seu nome")
+        let email = prompt("Digite o seu email")
+
+        let pessoa = {
+            nome,
+            email
+        }
+
+        for (let prop in pessoa) {
+            alert(pessoa[prop])
+        }
+
+    </script>
+
+</body>
+</html>

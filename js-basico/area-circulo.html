@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>círculo</title>
+</head>
+<body>
+    <h1>Área do círculo</h1>
+    <input type="number" value="2" id="input_">
+    <button onclick="area()" >Area do círculo</button>
+
+
+
+    <script>
+        let input = document.getElementById(input_)
+
+        function area(){
+            let areaC = Math.PI * Math.pow(input_.value, 2)
+            alert(areaC)
+        }
+
+    </script>
+
+</body>
+</html>

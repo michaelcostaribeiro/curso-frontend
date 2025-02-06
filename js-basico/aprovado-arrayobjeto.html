@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média com array e objetos</title>
+</head>
+<body>
+    <script>
+        const aluno ={
+            nome: "Maria",
+            notas:[1,3,3,8]
+        }
+        media = 0
+        for(let i = 0; i<aluno.notas.length; i++){
+            media += aluno.notas[i]
+            if(i == aluno.notas.length-1){
+                media = media/aluno.notas.length
+            }
+        }
+        alert("As notas da aluna "+ aluno.nome + " foram: " + aluno.notas)
+        alert("A média da " + aluno.nome + " é igual a: " + media)
+        if(media>=7){
+            alert("Ela foi aprovada.")
+        }else{
+            alert("Ela foi reprovada.")
+        }
+    </script>
+</body>
+</html>

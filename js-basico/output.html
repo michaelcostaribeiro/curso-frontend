@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <h1>raio teste</h1>
+    
+    <label for="numero">
+        <input type="number" name="" id="numero"> <br>
+        <button onclick="raioPrompt()">Mostrar a área prompt</button><br>
+        <button onclick="raioInput()">Mostrar a área input</button><br>
+    </label>
+
+    <output id="_output">a</output>
+
+
+    <script>
+        let out = document.getElementById("_output")
+
+        function raioPrompt(){
+            let raio = parseFloat(prompt("Digite o raio: "))
+            out.innerHTML = Math.PI * Math.pow((raio), 2)
+        }
+
+        function raioInput(){
+            let raio = numero.value
+            out.innerHTML = Math.PI * Math.pow((raio), 2)
+        }
+
+
+    </script>
+
+</body>
+</html>

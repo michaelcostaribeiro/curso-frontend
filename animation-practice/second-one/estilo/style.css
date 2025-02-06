@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    overflow: hidden;
+}
+figure{
+    width: 400px;
+}
+
+figure img{
+    object-fit: none;
+    width: 100%;
+    height: 200px;
+    object-position: 34% 0%; 
+    /* animation: cat-walk 1s steps(11) infinite, moving-through-screen 12s linear infinite; */
+    /* transform: translate(600%, 370%); */
+    animation: stop 1s .5s steps(5) forwards, moving-through-screen 1s linear forwards;
+    
+}
+
+@keyframes cat-walk{
+    0%, 9.09%{
+        object-position: 0% 8%;
+    }
+    9.1%, 18.18%{
+        object-position: 0% 16%;
+    }
+    18.19%, 27.27%{
+        object-position: 0% 25%;
+    }
+    27.28%, 36.36%{
+        object-position: 0% 33%;
+    }
+    36.37%, 45.45%{
+        object-position: 0% 41%;
+    }
+    45.46%, 54.54%{
+        object-position: 0% 50%;
+    }
+    54.55%, 63.63%{
+        object-position: 0% 58%;
+    }
+    63.64%, 72.72%{
+        object-position: 0% 66%;
+    }
+    72.73%, 81.81%{
+        object-position: 0% 75%;
+    }
+    81.82%, 90.9%{
+        object-position: 0% 83%;
+    }
+    91%, 100%{
+        object-position: 0% 91%;
+    }
+}
+@keyframes moving-through-screen{
+    0%{
+        transform:translate(600%, 370%);
+    }
+    100%{
+        transform: translate(420%, 370%);
+    }
+}
+@keyframes stop{
+    0%, 20%{
+        object-position: 34% 8%;
+    }
+    20.1%, 40%{
+        object-position: 34% 17%;
+    }
+    40.1%, 60%{
+        object-position: 34% 25%;
+    }
+    60.1%, 80%{
+        object-position: 34% 33.3%;
+    }
+    80.1%, 100%{
+        object-position: 34% 41.8%;
+    }
+    
+    
+}

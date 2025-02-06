@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 12em 1fr 1fr 1fr;
+    grid-template-rows: 4em repeat(5, 1fr);
+    min-height: 100vh;
+    font-family: "Poppins", serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    grid-column: 1/2;
+    grid-row:1/-1;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+
+}
+header>*{
+    padding: 1em;
+}
+
+header h1{
+    padding: 0 0 1.5em .3em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.top-nav{
+    border-bottom: 1px solid black;
+}
+.top-nav li, .bottom-nav p{
+    padding: .3em .3em;
+    list-style-type: none;
+}
+svg{
+    vertical-align: sub;
+    margin-right: .3em;
+}
+
+.quick-links{
+    grid-column: 2/-2;
+    background-color: white;
+}
+.author{
+    grid-column: -2/-1;
+    background-color: white;
+}
+.quick-links, .author{
+    display: flex;
+    align-items: center;
+}
+.quick-links>*{
+    padding: 1em;
+}
+.author{
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: last baseline;
+    padding-right: 2.5em;
+}
+.author p:nth-child(1){
+    font-weight: bold;
+}
+
+main{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f1f8;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 5em;
+    grid-template-rows: 7em 1fr 1fr;
+    padding: 2em;
+}
+main>*{
+    margin-bottom: 2em;
+}
+.text-container{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    background-color: white;
+    align-items: center;
+    padding: 0em 2.5em;
+    border-radius: 10px;
+}
+.text-container p{
+    color: rgb(66, 66, 66);
+}
+.text-container p b{
+    color: blue;
+    font-size: 1.2em;
+    padding-left: 1.5em;
+    font-weight: 500;
+}
+.text-container a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+}
+.image-banner{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: flex;
+}
+.row{
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    gap: 2em;
+}
+.image-banner img, .image-block img{
+    width: 100%;
+}
+
+.sep{
+    height: 50%;
+    border-right: 1px solid black;
+}

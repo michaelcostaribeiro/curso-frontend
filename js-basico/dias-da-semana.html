@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias da semana</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let semana = ["Sun","Mon","Tue","Wed","Thu","Fri", "Sat"]
+        let data = Date()
+        
+        function diaSemana(){
+            if(compare("Sun", data)){
+                alert("Domingo")
+            }
+            else if(compare("Mon", data)){
+                alert("Segunda-feira")
+            }
+            else if(compare("Tue", data)){
+                alert("Terça-feira")
+            }
+            else if(compare("Wed", data)){
+                alert("Quarta-feira")
+            }
+            else if(compare("Thu", data)){
+                alert("Quinta-feira")
+            }
+            else if(compare("Fri", data)){
+                alert("Sexta-feira")
+            }
+            else if(compare("Sat", data)){
+                alert("Sábado")   
+            }
+        
+        }
+        function compare(dia,func){
+            if(
+            dia.charAt(0) === func.charAt(0) && 
+            dia.charAt(1) === func.charAt(1) && 
+            dia.charAt(2) === func.charAt(2))
+            return true
+
+        }
+        diaSemana()
+    </script>
+</body>
+</html>

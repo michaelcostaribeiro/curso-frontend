@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada</title>
+</head> 
+<body>
+    <script>
+        let numero = Number(prompt("ler number"))
+        if(!(numero == "NaN")){
+            contador = 0
+            while (contador<1000){
+                document.write(numero*contador + "<br>")
+                contador++
+                if(contador%10===0){
+                    document.write("<br>")
+                }
+            }
+        }else{
+            document.write("Digite apenas números.")
+        }
+    </script>
+</body>
+</html>

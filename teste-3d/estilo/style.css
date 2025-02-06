@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(130deg, bisque 40%, rgb(138, 70, 70));
+    min-height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.animation{
+    width: 15em;
+    aspect-ratio: 1;
+    border: 1px solid red;
+}
+
+.animation-inside{
+    background-color: lightblue;
+    width: 10em;
+    aspect-ratio: 1;
+    margin: 2.5em auto;
+}
+#firstAnimation{
+    transform: perspective(500px) rotateY(20deg);
+}
+#secondContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
+    perspective: 100px;
+}
+#secondAnimation{
+    width: 4em;
+    margin: 1em auto;
+    transform: rotateX(20deg);
+}
+
+#secondAnimation:hover{
+    transform: rotateX(80deg);
+    backface-visibility: hidden;
+}

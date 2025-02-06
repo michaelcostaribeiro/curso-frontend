@@ -1,0 +1,34 @@
+.hero-banner{
+    background-image: url('../images/bg_topo_1600x1374.jpg');
+    background-position: top;
+}
+
+.hero-banner .hero-banner__icon{
+    height: 7.5rem;
+}
+.hero-banner p{
+    width: 50%;
+    margin: 0 auto;
+}
+.middle-content>*{
+    width: 25%;
+}
+
+@container (min-width: 75em){
+    .mainContent{
+            width: 100%;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+    .mainContent_container{
+            width: 50%;
+        }
+    .mainContent_container img{
+            width: 35%;
+        }
+    .mainContent_title{
+            margin-bottom: .2em;
+        }
+}

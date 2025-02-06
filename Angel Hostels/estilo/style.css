@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --primary-color: #612975;
+    --secondary-color: #511a63;
+}
+body{
+    container-type: inline-size;
+}
+
+
+.header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header img{
+    margin: .5em auto;
+    max-width: 15rem;
+}
+
+.header__nav ul li a{
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: white;
+}
+.header__nav ul li a:hover{
+    background-color: color-mix(in srgb, var(--primary-color), white 20%);
+}
+
+.header ul li{
+    background-color: var(--primary-color);
+    color: white;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+.hero-banner h2{
+    color: var(--primary-color);
+    padding: 1.5rem;
+    font-weight: 600;
+}
+.hero-banner p{
+    color:color-mix(in srgb,var(--primary-color), white 20%);
+    font-weight: 500;
+    padding: 1rem;
+}
+.btn{
+    background-color: turquoise;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding: .8rem 2.5rem;
+    border-radius: 10px;
+}
+
+.hero-banner img{
+    display: none;
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+.middle-container img{
+    height: 5rem;
+}
+
+.middle-container img, .middle-container h2{
+    color: var(--primary-color);
+}
+.middle-container h2{
+    padding: 1rem;
+}
+.middle-container p{
+    line-height: 1.5;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mainContent_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    padding: 2em;
+}
+.mainContent img{
+    width: 100%;
+}
+.mainContent_title{
+    color: var(--primary-color);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+}
